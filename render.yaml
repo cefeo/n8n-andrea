@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    plan: free
+    region: frankfurt # O quella più vicina a te
+    envVars:
+      - key: N8N_SECURE_COOKIE
+        value: false
